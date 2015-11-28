@@ -6,5 +6,5 @@ build_script:
   - qmake HelloWorld.pro
   - mingw32-make
 artifacts:
-  - path: build/bin
+  - path: release
     name: HelloWorld
