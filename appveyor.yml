@@ -17,7 +17,7 @@ deploy:
     draft: true
     prerelease: true
     auth_token:
-      secure: mkLxcu4mmygojWD+aX1hMiHjJVoyvWwtMKwjT3bb93zJslNRY2qcuMsaxHaDYP32
+      secure: mzyZo/McrE4dTAgioxqk+rc25F1/kT+yF8iWk+Khq7/CSTs5j4dYJzkX/n6CUGDw
     on:
       branch: master
 
