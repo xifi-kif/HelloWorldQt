@@ -10,3 +10,14 @@ build_script:
 artifacts:
   - path: release
     name: HelloWorld
+deploy:
+  # Deploy to GitHub Releases
+  - provider: GitHub
+    artifact: HelloWorld
+    draft: true
+    prerelease: true
+    auth_token:
+      secure: d0c5cea41baebadaea03e866feac41679bd0d33d
+    on:
+      branch: master
+
