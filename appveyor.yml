@@ -17,7 +17,7 @@ deploy:
     draft: true
     prerelease: true
     auth_token:
-      secure: d0c5cea41baebadaea03e866feac41679bd0d33d
+      secure: da3ee5291ff53e3ecb10874fa6553e33acdaa6fe
     on:
       branch: master
 
