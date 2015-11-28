@@ -1,0 +1,7 @@
+os: unstable
+install:
+  - set QTDIR=C:\Qt\5.5\mingw492_32
+  - set PATH=%QTDIR%\bin;%cd%\msys32\mingw32\bin\;%cd%\msys32\usr\bin\;%PATH%
+build_script:
+  - qmake HelloWorld.pro
+  - mingw32-make
