@@ -6,8 +6,8 @@ build_script:
   - qmake HelloWorld.pro
   - mingw32-make
   - md zip-folder
-  - copy release\HelloWord.exe zip-folder
-  - cd zip-folder
+  - copy release\HelloWord.exe .\zip-folder
+  - cd .\zip-folder
   - windeployqt --release HelloWorld.exe
 artifacts:
   - path: zip-folder
