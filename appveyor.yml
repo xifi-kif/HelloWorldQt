@@ -5,14 +5,14 @@ os: unstable
 #   make: nmake release
 install:
 # - set QTDIR=C:\Qt\5.5\mingw492_32
-  - dir c:\Qt\5.5\
-# - set QTDIR=C:\Qt\5.5\vs2010
+ - set QTDIR=C:\Qt\5.5\msvc2013
+ - set PATH=%PATH%;%QTDIR%\bin
 # - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin
 build_script:
-# - qmake HelloWorld.pro
-# - mingw32-make
-# - cd release
-# - windeployqt --release HelloWorld.exe
+ - qmake HelloWorld.pro
+ - nmake release
+ - cd release
+ - windeployqt --release HelloWorld.exe
 artifacts:
   - path: release
     name: HelloWorld
